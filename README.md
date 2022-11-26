@@ -74,8 +74,9 @@ The main purpose for the migration were due to the following reasons:
 
 
 The web application is not scalable to handle user load at peak
-*When the admin sends out notifications, it's currently taking a long time because it's looping through all attendees, resulting in some  *HTTP timeout exceptions
-*The current architecture is not cost-effective
+   *When the admin sends out notifications, it's currently taking a long time because it's looping through all attendees, resulting in some  
+   *HTTP timeout exceptions
+   *The current architecture is not cost-effective
 
 
 Azure App Service solves this! It allows you to quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Apps running on App Service can meet rigorous performance, scalability, security, and compliance requirements while leveraging a fully-managed platform to take care of infrastructure maintenance. It is cost-effective.
