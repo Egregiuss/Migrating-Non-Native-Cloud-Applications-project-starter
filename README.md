@@ -66,23 +66,23 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Postgres Database* | Basic, 1 vCore(s), 5 GB    |   $49.64  |
 | *Azure Service Bus* | Basic | Pay as you go variable pricing       |
 | *Azure Storage Account*   | StorageV2 (general purpose v2)        | $0.018 per GB |
-| *Azure Function App*   | PremiumV2        |     $315.43         |
-| *Azure App Service*     |  PremiumV2       |    $73.73          |
+| *Azure Function App*   | PremiumV2        |    Pay as you go( $0.173 vCPU/hour)         |
+| *Azure App Service*     |  PremiumV2       |    $73.73($0.111/hour)        |
 
 ## Architecture Explanation
 The main purpose for the migration were due to the following reasons:
 
 
 The web application is not scalable to handle user load at peak
-*When the admin sends out notifications, it's currently taking a long time because it's looping through all attendees, resulting in some  *HTTP timeout exceptions
-*The current architecture is not cost-effective
+   - When the admin sends out notifications, it's currently taking a long time because it's looping through all attendees, resulting in some  
+   - HTTP timeout exceptions
+   - The current architecture is not cost-effective
 
 
 Azure App Service solves this! It allows you to quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. Apps running on App Service can meet rigorous performance, scalability, security, and compliance requirements while leveraging a fully-managed platform to take care of infrastructure maintenance. It is cost-effective.
 
 
-Because Azure Functions are best suited for smaller apps have events that can work independently of other websites.It is therefore ideal for our aitua Some of the common azure functions are sending emails, starting backup, order processing, task scheduling such as sending notifications, messages.Azure Functions expands CPU and memory capacity. Azure Functions plans are cost effective.
-
+Because Azure Functions are best suited for smaller apps have events that can work independently of other websites.It is therefore ideal for our application. Some of the common azure functions are sending emails, starting backup, order processing, task scheduling such as sending notifications, messages.Azure Functions expands CPU and memory capacity. Azure Functions plans are cost effective.
 
 
 
