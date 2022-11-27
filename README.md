@@ -85,5 +85,12 @@ Azure App Service solves this! It allows you to quickly build, deploy, and scale
 Because Azure Functions are best suited for smaller apps have events that can work independently of other websites.It is therefore ideal for our application. Some of the common azure functions are sending emails, starting backup, order processing, task scheduling such as sending notifications, messages.Azure Functions expands CPU and memory capacity. Azure Functions plans are cost effective.
 
 
+Azure Service Bus is a fully managed enterprise message broker with message queues and publish-subscribe topics (in a namespace). Service Bus is used to decouple applications and services from each other, providing the following benefits:
 
+- Load-balancing work across competing workers
+- Safely routing and transferring data and control across service and application boundaries
+- Coordinating transactional work that requires a high-degree of reliability
+
+
+see more here: https://learn.microsoft.com/en-us/azure
 
