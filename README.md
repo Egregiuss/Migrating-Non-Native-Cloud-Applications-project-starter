@@ -66,8 +66,8 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 | *Azure Postgres Database* | Basic, 1 vCore(s), 5 GB    |   $49.64  |
 | *Azure Service Bus* | Basic | Pay as you go variable pricing       |
 | *Azure Storage Account*   | StorageV2 (general purpose v2)        | $0.018 per GB |
-| *Azure Function App*   | PremiumV2        |     $315.43         |
-| *Azure App Service*     |  PremiumV2       |    $73.73          |
+| *Azure Function App*   | PremiumV2        |    Pay as you go( $0.173 vCPU/hour)         |
+| *Azure App Service*     |  PremiumV2       |    $73.73($0.111/hour)        |
 
 ## Architecture Explanation
 The main purpose for the migration were due to the following reasons:
@@ -83,7 +83,10 @@ Azure App Service solves this! It allows you to quickly build, deploy, and scale
 
 
 Because Azure Functions are best suited for smaller apps have events that can work independently of other websites.It is therefore ideal for our application. Some of the common azure functions are sending emails, starting backup, order processing, task scheduling such as sending notifications, messages.Azure Functions expands CPU and memory capacity. Azure Functions plans are cost effective.
+<<<<<<< HEAD
+=======
 
+>>>>>>> 03380d8bf681ad3fd6130b4cdd1016fde536f87a
 
 
 
