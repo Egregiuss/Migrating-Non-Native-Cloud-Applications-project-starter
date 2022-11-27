@@ -83,10 +83,6 @@ Azure App Service solves this! It allows you to quickly build, deploy, and scale
 
 
 Because Azure Functions are best suited for smaller apps have events that can work independently of other websites.It is therefore ideal for our application. Some of the common azure functions are sending emails, starting backup, order processing, task scheduling such as sending notifications, messages.Azure Functions expands CPU and memory capacity. Azure Functions plans are cost effective.
-<<<<<<< HEAD
-=======
-
->>>>>>> 03380d8bf681ad3fd6130b4cdd1016fde536f87a
 
 
 
